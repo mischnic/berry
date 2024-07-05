@@ -147,7 +147,7 @@ export function StarrySky() {
 
   useEffect(() => {
     try {
-      installSky(canvasRef.current!);
+      return installSky(canvasRef.current!);
     } catch {
       setIsCrashed(true);
     }
